@@ -1,0 +1,24 @@
+{
+  "name": "helixDemo",
+  "description": "",
+  "main": "server.js",
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "~0.2.18",
+    "angular": "~1.5.0",
+    "angularfire": "~1.1.4",
+    "angular-bootstrap": "~1.2.4",
+    "angucomplete-alt": "~2.2.0",
+    "jquery": "~2.2.1"
+  }
+}

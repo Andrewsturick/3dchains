@@ -1,0 +1,32 @@
+{
+  "name": "helixDemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "bower": "^1.7.7",
+    "cookie-parser": "^1.4.1",
+    "dotenv": "^2.0.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "firebase": "^2.4.1",
+    "gulp": "^3.9.1",
+    "gulp-add-src": "^0.2.0",
+    "gulp-bower": "0.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-copy": "0.0.2",
+    "gulp-run": "^1.6.12",
+    "gulp-util": "^3.0.7",
+    "mongoose": "^4.4.6",
+    "morgan": "^1.7.0",
+    "rimraf": "^2.5.2"
+  }
+}
