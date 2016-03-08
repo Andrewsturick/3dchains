@@ -92,8 +92,6 @@ angular.module('helixDemo')
 
         }
 
-
-
         scope.sortBy()
 
         var elements = d3.selectAll('.element')
@@ -236,6 +234,9 @@ angular.module('helixDemo')
       }
 
 
+
+
+      ///changes text and transforms shape AFTER object position data has been set
       function transformShape(d){
         var duration = 1000;
         scope.isShowing = d
@@ -374,6 +375,11 @@ angular.module('helixDemo')
         }
       }
       var lastTime = 0
+
+
+      //because of the nature of firebase objects, they come in pieces, so this algorithm
+      //makes sure not to update until it is all there, plus stops the refire that occurse when I
+      //parse the data into an object
       scope.$watch(function(){
         return scope.data
       }, function(n,o){
