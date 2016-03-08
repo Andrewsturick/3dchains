@@ -146,7 +146,7 @@ angular.module('helixDemo')
         .attr('y', '95')
         .attr('x', function(d){
           try{
-            return 130
+            return 130-vizfourData.dataPrep(scope.isShowing, d).toString().length*4
           }catch(e){
             return 130
           }
@@ -160,9 +160,10 @@ angular.module('helixDemo')
         .attr('y', '95')
         .attr('x', function(d){
           try{
-            return 65-(scope.isShowing.length*4)
+            return 50-vizfourData.dataPrep(scope.isShowing, d).toString().length*4
+
           }catch(e){
-            return 65
+            return 50 
           }
         })
         .style('font-size', '1em')
