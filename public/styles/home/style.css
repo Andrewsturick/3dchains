@@ -1,0 +1,50 @@
+#info-box{
+  min-height: 25vh;
+  width: 40vw;
+  background-color: rgba(135, 205, 250, 0.8);
+  border-top-right-radius: 1vw;
+  bottom: 0;
+  position: absolute;
+  color: red;
+
+}
+
+.info-stock{
+  font-size: 2em;
+  text-align: center;
+}
+.info-size, .info-color, .info-strike, .info-option{display: inline-block}
+/*body.ng-pageslide-body-open::before {
+    content: '.';
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color: rgba(135, 205, 250, 0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.5;
+    transition: opacity 1s;
+}
+
+.tiny-button{
+  position
+}
+body.ng-pageslide-body-closed::before {
+    transition: opacity 1s;
+    opacity: 0;
+    content: '.';
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color: rgba(135, 205, 250, 0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+.tiny{
+  position: absolute;
+}*/

@@ -1,2 +1,85 @@
-<three-vizfour id="threejsd3four" sort-options="{{sortParams}}" data="{{market}}"></three-vizfour>
-<div id="menu"></div>
+<three-vizthree id="threejsd3" data="{{symbolTracker}}" isShowing="showing" ></three-vizthree>
+<div id="info-box">
+  <div ng-show="infoShowing">
+    <div class="info-stock">{{infoShowing.object.params.stock}}</div>
+    <div>
+      <div class="info-strike">{{infoShowing.object.params.strike.strike}}</div>
+      <div class="info-option">{{infoShowing.object.params.optionType.type}}</div>
+    </div>
+
+    <div class="info-delta">Delta:{{Math.round(+infoShowing.object.params.yRef.value*100)}}</div>
+    <div>
+      <div class="info-color">{{infoShowing.object.params.colorRef.param}}:</div>
+      <div class="info-color">{{infoShowing.object.params.colorRef.value}}</div>
+    </div>
+
+    <div>
+      <div class="info-size">{{infoShowing.object.params.sizeRef.param}}:</div>
+      <div class="info-size">{{infoShowing.object.params.sizeRef.value}}</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- <div class="container">
+  <div id="content">
+    <h2 class="title col-centered">3d Chain Viewer</h2>
+    <three-vizthree id="threejsd3" data="{{symbolTracker}}" isShowing="showing" ></three-vizthree>
+  </div>
+
+  <div id="sidebar">
+
+    <div class="container title-container">
+      <h1 class="chain-title">Option Chain Demo</h1>
+      <h3>Search for a stock or symbol!</h3>
+      <br>
+      <angucomplete-alt id="ex1"
+      placeholder="Search stocks"
+      pause="100"
+      selected-object="selectedStock"
+      local-data="marketArray"
+      search-fields="Symbol,Name"
+      description-field="Name"
+      title-field="Symbol"
+      minlength="1"
+      match-class="highlight"&gt;&lt;/div&gt;/>
+    </div>
+
+    <div ng-show="infoShowing">
+      <div class="info-stock">{{infoShowing.object.params.stock}}</div>
+      <div>
+        <div class="info-strike">{{infoShowing.object.params.strike.strike}}</div>
+        <div class="info-option">{{infoShowing.object.params.optionType.type}}</div>
+      </div>
+
+      <div class="info-delta">Delta:{{Math.round(+infoShowing.object.params.yRef.value*100)}}</div>
+      <div>
+        <div class="info-color">{{infoShowing.object.params.colorRef.param}}:</div>
+        <div class="info-color">{{infoShowing.object.params.colorRef.value}}</div>
+      </div>
+
+      <div>
+        <div class="info-size">{{infoShowing.object.params.sizeRef.param}}:</div>
+        <div class="info-size">{{infoShowing.object.params.sizeRef.value}}</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="sidebar-resizer"
+  resizer="vertical"
+  resizer-width="6"
+  resizer-left="#sidebar"
+  resizer-right="#content"
+  resizer-max="400">
+</div>
+
+</div> -->
+<!-- <a class="tiny tiny- button" href="" ng-click="toggle()">Open Sidebar</a>
+               <div class="pageslide" pageslide ps-open="checked" ps-side="left" ps-push="true" >
+                   <div style="padding:20px" id="demo-right">
+                       <h2>Hello Pageslide</h2>
+                       <p>Put here whatever you want</p>
+                       <a ng-click="toggle()" class="button" >Close</a>
+                   </div>
+               </div> -->
